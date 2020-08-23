@@ -39,7 +39,7 @@ export const Header = () => {
       <Modal isOpen={modal} toggle={toggleModal}>
         <ModalHeader toggle={toggleModal}>关于</ModalHeader>
         <ModalBody>
-          Under Construction
+          模拟无人机的飞行。
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={toggleModal}>关闭</Button>{' '}
