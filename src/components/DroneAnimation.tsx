@@ -28,7 +28,7 @@ export class DroneAnimation extends Component<DroneAnimationProp, DroneAnimation
     goUpOrDown = (distance: number) => {
         const droneElement = this.state.droneElement;
         const newHeight = this.state.dronePosition.z + distance;
-        if(newHeight >= 200 || newHeight <= 0) {
+        if (newHeight >= 200 || newHeight <= 0) {
             return;
         }
         const newPosition = {
@@ -43,13 +43,13 @@ export class DroneAnimation extends Component<DroneAnimationProp, DroneAnimation
             dronePosition: {
                 ...newPosition
             }
-        });   
+        });
     };
 
     moveOnX = (distance: number) => {
         const droneElement = this.state.droneElement;
         const newX = this.state.dronePosition.x + distance;
-        if(newX >= 100 || newX <= -100) {
+        if (newX >= 100 || newX <= -100) {
             return;
         }
         const newPosition = {
@@ -64,13 +64,13 @@ export class DroneAnimation extends Component<DroneAnimationProp, DroneAnimation
             dronePosition: {
                 ...newPosition
             }
-        });   
+        });
     };
 
     moveOnY = (distance: number) => {
         const droneElement = this.state.droneElement;
         const newY = this.state.dronePosition.y + distance;
-        if(newY >= 100 || newY <= -100) {
+        if (newY >= 100 || newY <= -100) {
             return;
         }
         const newPosition = {
@@ -85,7 +85,7 @@ export class DroneAnimation extends Component<DroneAnimationProp, DroneAnimation
             dronePosition: {
                 ...newPosition
             }
-        });   
+        });
     };
 
     componentDidMount() {
@@ -261,7 +261,7 @@ export class DroneAnimation extends Component<DroneAnimationProp, DroneAnimation
                     <Button color="success" onClick={() => this.moveOnX(-5)}>
                         X轴负方向移动
                     </Button>
-                    
+
                 </div>
                 <div className='control-button-container'>
                     <Button color="success" onClick={() => this.moveOnY(5)}>
@@ -270,7 +270,7 @@ export class DroneAnimation extends Component<DroneAnimationProp, DroneAnimation
                     <Button color="success" onClick={() => this.moveOnY(-5)}>
                         Y轴负方向移动
                     </Button>
-                    
+
                 </div>
                 <div className='drone-animation-container'>
                     <canvas className="zdog-canvas" width="400" height="600">
