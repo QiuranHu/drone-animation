@@ -1,3 +1,9 @@
+# A React project about animating drone flying.
+Language: TypeScript <br/>
+Drawing: [Zdog.js](https://zzz.dog/) <br/>
+UI: ReactStrap <br/>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
